@@ -7,10 +7,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('index.html')
+	return render_template('dashboard.html')
 
+@app.route('/predict')
+def predict():
+	return render_template('predictions.html')
 
-@app.route('/predict',methods=['POST','GET'])
+@app.route('/getpredict',methods=['POST','GET'])
 def get_predict():
     if request.method=='POST':
         result=request.form
@@ -55,10 +58,18 @@ def get_predict():
     ann = load_model("Machine_Learning/customer_churn.h5")
 
     #Predicting with ANN
-    new_pred = ann.predict(X)>0.5    
+    new_pred = ann.predict(X)>0.5 
 
-    return render_template('index.html',prediction=new_pred)
+    if new_pred[0][0] == True:
+        result = 'TRUE' 
+    else:
+        result = 'FALSE'
 
+    return render_template('predictions.html',prediction=result)
+
+@app.route('/icons')
+def icons():
+	return render_template('icons.html')
 
 if __name__ == '__main__':
 	app.run()
