@@ -7,11 +7,27 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+	return render_template('summary.html')
+
+@app.route('/summary')
+def summary():
+	return render_template('summary.html')
+
+@app.route('/dashboard')
+def dashboard():
 	return render_template('dashboard.html')
 
 @app.route('/predict')
 def predict():
 	return render_template('predictions.html')
+
+@app.route('/model')
+def model():
+	return render_template('selectedmodel.html')
+
+@app.route('/othermodel')
+def othermodel():
+	return render_template('othermodels.html')
 
 @app.route('/getpredict',methods=['POST','GET'])
 def get_predict():
@@ -61,15 +77,17 @@ def get_predict():
     new_pred = ann.predict(X)>0.5 
 
     if new_pred[0][0] == True:
-        result = 'TRUE' 
+        result = 'TRUE'
+        description = 'The current customer has HIGH probbaility of churning' 
     else:
         result = 'FALSE'
+        description = 'The current customer has LOW probbaility of churning'
 
-    return render_template('predictions.html',prediction=result)
+    return render_template('predictions.html',prediction=result, description=description)
 
-@app.route('/icons')
-def icons():
-	return render_template('icons.html')
+@app.route('/about')
+def about():
+	return render_template('aboutus.html')
 
 if __name__ == '__main__':
 	app.run()
