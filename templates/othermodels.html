@@ -92,7 +92,364 @@
 
       </div>
       <div class="content">
-        
+        <!-- Model Row -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="height: 18rem;">
+              <div class="card-header">
+                <h4 class="card-title">ACCURACY</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="text-center">0.84</h1>
+                <h6>Configuration</h6>
+                <p class="card-text">n_neighbors = 10<br>metric = 'minkowski'<br> p = 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card" style="height: 18rem;">
+              <div class="card-header">
+                <h4 class="card-title">K-NEAREST NEIGHBORS</h4>
+              </div>
+              <div class="card-body">                
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th class="text-center">
+                        Category
+                      </th>
+                      <th class="text-center">
+                        Precision
+                      </th>
+                      <th class="text-center">
+                        Recall
+                      </th>
+                      <th class="text-center">
+                        F1-Score
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">
+                         No Churn
+                        </td>
+                        <td class="text-center">
+                          0.85
+                        </td>
+                        <td class="text-center">
+                          0.98
+                        </td>
+                        <td class="text-center">
+                          0.91
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                         Churn
+                        </td>
+                        <td class="text-center">
+                          0.73
+                        </td>
+                        <td class="text-center">
+                          0.28
+                        </td>
+                        <td class="text-center">
+                          0.41
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="height: 18rem;">
+              <div class="card-header">
+                <h4 class="card-title">CONFUSION MATRIX</h4>
+              </div>
+              <div class="card-body text-center">
+                <img src="../static/img/knnmatrix2.png" width="250px" height="200px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Model Row -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="height: 18rem;">
+              <div class="card-header">
+                <h4 class="card-title">ACCURACY</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="text-center">0.86</h1>
+                <h6>Configuration</h6>
+                <p class="card-text">kernel = rbf</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card" style="height: 18rem;">
+              <div class="card-header">
+                <h4 class="card-title">SUPPORT VECTOR MACHINE</h4>
+              </div>
+              <div class="card-body">                
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th class="text-center">
+                        Category
+                      </th>
+                      <th class="text-center">
+                        Precision
+                      </th>
+                      <th class="text-center">
+                        Recall
+                      </th>
+                      <th class="text-center">
+                        F1-Score
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">
+                         No Churn
+                        </td>
+                        <td class="text-center">
+                          0.87
+                        </td>
+                        <td class="text-center">
+                          0.97
+                        </td>
+                        <td class="text-center">
+                          0.92
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                         Churn
+                        </td>
+                        <td class="text-center">
+                          0.77
+                        </td>
+                        <td class="text-center">
+                          0.38
+                        </td>
+                        <td class="text-center">
+                          0.51
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="height: 18rem;">
+              <div class="card-header">
+                <h4 class="card-title">CONFUSION MATRIX</h4>
+              </div>
+              <div class="card-body text-center">
+                <img src="../static/img/svnmatrix.png" width="250px" height="200px">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Model Row -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">ACCURACY</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="text-center">0.78</h1>
+              <h6>Configuration</h6>
+              <p class="card-text">SkLearn Default Config</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">DECISION TREE CLASSIFIER</h4>
+            </div>
+            <div class="card-body">                
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th class="text-center">
+                      Category
+                    </th>
+                    <th class="text-center">
+                      Precision
+                    </th>
+                    <th class="text-center">
+                      Recall
+                    </th>
+                    <th class="text-center">
+                      F1-Score
+                    </th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                       No Churn
+                      </td>
+                      <td class="text-center">
+                        0.87
+                      </td>
+                      <td class="text-center">
+                        0.85
+                      </td>
+                      <td class="text-center">
+                        0.86
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                       Churn
+                      </td>
+                      <td class="text-center">
+                        0.43
+                      </td>
+                      <td class="text-center">
+                        0.48
+                      </td>
+                      <td class="text-center">
+                        0.46
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">CONFUSION MATRIX</h4>
+            </div>
+            <div class="card-body text-center">
+              <img src="../static/img/dtmatrix.png" width="250px" height="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model Row -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">ACCURACY</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="text-center">0.86</h1>
+              <h6>Configuration</h6>
+              <p class="card-text">Grid Search:<br>max_depth=8<br>n_estimators=200<br>random_state=123</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">RANDOM FOREST CLASSIFIER</h4>
+            </div>
+            <div class="card-body">                
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th class="text-center">
+                      Category
+                    </th>
+                    <th class="text-center">
+                      Precision
+                    </th>
+                    <th class="text-center">
+                      Recall
+                    </th>
+                    <th class="text-center">
+                      F1-Score
+                    </th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                       No Churn
+                      </td>
+                      <td class="text-center">
+                        0.88
+                      </td>
+                      <td class="text-center">
+                        0.96
+                      </td>
+                      <td class="text-center">
+                        0.92
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                       Churn
+                      </td>
+                      <td class="text-center">
+                        0.73
+                      </td>
+                      <td class="text-center">
+                        0.48
+                      </td>
+                      <td class="text-center">
+                        0.58
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">CONFUSION MATRIX</h4>
+            </div>
+            <div class="card-body text-center">
+              <img src="../static/img/rfmatrix.png" width="250px" height="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decision Tree Image -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card" style="height: 38rem;">
+            <div class="card-header">
+              <h4 class="card-title">SECTION OF DECISION TREE</h4>
+            </div>
+            <div class="card-body text-center">
+              <img src="../static/img/tree4.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Decision Tree Image -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card" style="height: 23rem;">
+                  <div class="card-header">
+                    <h4 class="card-title">PROJECT WORKFLOW</h4>
+                  </div>
+                  <div class="card-body text-center">
+                    <img src="../static/img/workflow2.png">
+                  </div>
+                </div>
+              </div>
+            </div>
           
       </div>
       <footer class="footer">
