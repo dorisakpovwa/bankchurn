@@ -92,7 +92,116 @@
 
       </div>
       <div class="content">
-        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style="text-align: center;">
+                <h2 class="card-title">Artificial Neural Network Model</h2>
+              </div>
+              <div class="card-body" style="text-align: center;">
+                <img src="../static/img/ann.png" alt="" width="675" height="450">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Model Row -->
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">ACCURACY</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="text-center">0.86</h1>
+              <h6>Configuration</h6>
+              <p class="card-text">TensorFlow Keras</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">ARTIFICIAL NEURAL NETWORK</h4>
+            </div>
+            <div class="card-body">                
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th class="text-center">
+                      Category
+                    </th>
+                    <th class="text-center">
+                      Precision
+                    </th>
+                    <th class="text-center">
+                      Recall
+                    </th>
+                    <th class="text-center">
+                      F1-Score
+                    </th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                       No Churn
+                      </td>
+                      <td class="text-center">
+                        0.87
+                      </td>
+                      <td class="text-center">
+                        0.96
+                      </td>
+                      <td class="text-center">
+                        0.91
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">
+                       Churn
+                      </td>
+                      <td class="text-center">
+                        0.72
+                      </td>
+                      <td class="text-center">
+                        0.43
+                      </td>
+                      <td class="text-center">
+                        0.54
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="height: 18rem;">
+            <div class="card-header">
+              <h4 class="card-title">CONFUSION MATRIX</h4>
+            </div>
+            <div class="card-body text-center">
+              <img src="../static/img/annmatrix2.png" width="250px" height="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="places-buttons">
+              <div class="row">
+                <div class="col-md-12 ml-auto mr-auto text-center">
+                  <div class='tableauPlaceholder' id='viz1622593278481' style='position: relative'><noscript><a href='#'><img alt='Feature Importance ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FeatureImportance_h5&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FeatureImportance_h5&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FeatureImportance_h5&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1622593278481');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
           
       </div>
       <footer class="footer">
