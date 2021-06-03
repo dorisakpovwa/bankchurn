@@ -78,10 +78,10 @@ def get_predict():
 
     if new_pred[0][0] == True:
         result = 'TRUE'
-        description = 'The current customer has HIGH probbaility of churning' 
+        description = 'The current customer has HIGH probability of churning' 
     else:
         result = 'FALSE'
-        description = 'The current customer has LOW probbaility of churning'
+        description = 'The current customer has LOW probability of churning'
 
     return render_template('predictions.html',prediction=result, description=description)
 
