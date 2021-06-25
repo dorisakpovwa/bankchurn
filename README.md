@@ -31,6 +31,7 @@ Upon careful study of the various models and validations. We decided to go with 
 Deployment:
 The app was deployed in Heroku:
 https://gtbankchurn.herokuapp.com/summary
+
 Tableau Visualizations:
 https://public.tableau.com/profile/doris.akpovwa#!/?newProfile=&activeTab=0
 
