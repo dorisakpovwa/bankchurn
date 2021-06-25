@@ -1,13 +1,14 @@
 # bankchurn
 Project Name: TEAM GREEDY  BANKERS
 
-Project Team:
+Contributors:
 
-DORIS AKPOVWA
+DORIS AKPOVWA - Data Preparation & 
+Visualizations
 
-NADER SALAMEH
+NADER SALAMEH - Data Engineering
 
-CARLOS PAZOS
+CARLOS PAZOS - (Data Scientist & Team Admin)
 
 
 PROJECT SUMMARY
